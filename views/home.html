@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link href="/static/homepageStyle.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#">
+          <img src="/static/LOGO.jpg" alt="img" class="logo" />
+          <h1 class="logo_name">MUSIC</h1>
+        </a>
+        <!-- <button class="login_btn" action="/logout" method="get">LOGOUT</button> -->
+        <form action="/logout" method="get">
+          <button type="submit" class="login_btn">LOGOUT</button>
+      </form>      
+      </nav>
+    </header>
+    <!-- music -->
+    <div class="music_box">
+      <div class="container">
+        <div class="top">
+          <img src="/static/back-svgrepo-com.svg" alt="back" class="back_btn top_img" />
+          <img
+            src="/static/menu-svgrepo-com.svg"
+            alt="drop down"
+            class="drop_down top_img"
+          />
+        </div>
+        <a href="/static/album_image.html">
+          <div>
+            <img
+              src="/static/Album Cover Art.jpeg"
+              alt="album_cover"
+              class="album_img "
+            />
+          </div>
+        </a>
+        <div class="song_name">
+          <h1>Moon Song</h1>
+        </div>
+        <div class="artist_name">
+          <h1>Gregory Alan Isakov</h1>
+        </div>
+        <div class="container_bottom">
+          <!-- <input type="range" name="range" min="0" max="100" /> -->
+            <audio controls muted loop class="audio">
+              <source src="/static/That Moon Song.mp3" type="audio/mpeg" />
+              <source src="/static/That Moon Song.mp3" type="audio/wav" />
+            </audio>
+          </div>
+          <div class="bottom">
+            <ul class="play_options">
+              <li id="one"><img src="/static/previous-999-svgrepo-com.svg"></li>
+              <li id="two" ><img src="/static/play-svgrepo-com.svg"></li>
+              <li id="four" ><img src="/static/media-pause-svgrepo-com.svg"></li>
+              <li id="three"><img src="/static/next-998-svgrepo-com.svg"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- music -->
+    <footer>
+      <div class="footer_div">
+        <marquee>Music Player</marquee>
+      </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>

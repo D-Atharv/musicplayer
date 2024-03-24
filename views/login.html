@@ -1,0 +1,65 @@
+{{define "login"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <h1 class="heading">LOGIN</h1>
+        {{ if .AlertMessage }}
+        <div class="alert" style="text-align: center; background-color: wheat">
+          {{ .AlertMessage }}
+        </div>
+        {{ end }}
+        <form action="/login" method="post">
+          <div class="form_input">
+            <div class="user_form">
+              <input
+                type="name"
+                class="name"
+                placeholder="UserName"
+                name="username"
+                required
+              />
+              <img src="/static/user-svgrepo-com.svg" alt="user_image" />
+            </div>
+            <div class="password_form">
+              <input
+                type="password"
+                class="password"
+                placeholder="Password"
+                name="password"
+                required
+              />
+              <img
+                src="/static/password-lock-solid-svgrepo-com.svg"
+                alt="password_img"
+              />
+            </div>
+          </div>
+          <div class="remember_me">
+            <div class="label_check">
+              <input type="checkbox" name="checkbox" />
+              <label for="checkbox">Remember Me</label>
+            </div>
+            <a href="#">
+              <h1>Forgot Password?</h1>
+            </a>
+          </div>
+          <div class="btn">
+            <button type="submit"><strong>Login</strong></button>
+          </div>
+        </form>
+        <div class="register">
+          <h1>Don't Have An Account? <a href="/signup">Register</a></h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{{end}}
