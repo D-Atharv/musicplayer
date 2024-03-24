@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
     <link href="/static/homepageStyle.css" rel="stylesheet" />
-
   </head>
 
   <body>
@@ -15,9 +14,16 @@
           <img src="/static/LOGO.jpg" alt="img" class="logo" />
           <h1 class="logo_name">MUSIC</h1>
         </a>
-        <!-- <button class="login_btn" action="/logout" method="get">LOGOUT</button> -->
+        <form style="position: relative;
+        left: 230px;">
+          <input type="search" placeholder="Search" class="search_bar" />
+          <button type="submit" class="search_btn">
+            <img src="/static/icons8-search.svg" />
+          </button>
+        </form>
+  
         <form action="/logout" method="get">
-          <button type="submit" class="login_btn">LOGOUT</button>
+          <button type="submit" class="login_btn" style="position: relative; left: 200px;">LOGOUT</button>
       </form>      
       </nav>
     </header>

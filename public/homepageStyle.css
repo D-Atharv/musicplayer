@@ -45,7 +45,9 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
 
 .search_bar {
     width: 80%;
@@ -62,9 +64,9 @@ body::-webkit-scrollbar {
     outline: none;
     box-shadow: 1px 2px  0px 1px rgb(51, 2, 2);
     transition: all 0.9s ease-in-out;
-}
+} 
 
-.search_bar:hover{
+ .search_bar:hover{
     border: 1px solid white;
 }
 
@@ -94,7 +96,7 @@ body::-webkit-scrollbar {
     transform: scale(0.98);
 }
 
-.navbar .login_btn{
+.navbar {
     height: 35px;
     padding: 10px;
     background-color: rgb(78,6,6);
@@ -109,12 +111,28 @@ body::-webkit-scrollbar {
     width: 110px;
     justify-content: center;
     transition: 0.2s ease-in-out;
-    box-shadow: 0px 0px 9px 2px rgb(67, 2, 2)   
+    box-shadow: 0px 0px 9px 2px rgb(67, 2, 2)
+}
+.login_btn{
+    height: 35px;
+    padding: 10px;
+    background-color: rgb(78,6,6);
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 550;
+    width: 110px;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 9px 2px rgb(67, 2, 2)
 }
 
 .navbar .login_btn:hover{
     transform: scale(1.05);
-    /* border: 1px solid white; */
     opacity: 0.9;
 }
 
@@ -147,6 +165,7 @@ footer{
     font-size: large;
 }
 
+
 .music_box{
     display: flex;
     align-items: center;
@@ -154,14 +173,11 @@ footer{
     margin-top: 58px;
 }
 .container {
-    /* background-color: #242323; */
     background-color: rgb(20, 19, 19);
     width: 32%;
     height: 500px;
     box-shadow: 0px 0px 9px 4px rgb(67, 2, 2); 
     border-radius:10px;
-    /* box-shadow: 6px 6px 5px rgb(55, 3, 3)     */
-
 }
 
 .top {
@@ -184,16 +200,13 @@ footer{
     transition: 0.2s ease-in-out;
     box-shadow: 0px 1px 10px rgba(161, 7, 7, 0.5);
     position: relative;
-    
-    /* box-shadow: 0px 0px 20px rgb(68, 67, 67); */
+
 }
 
 
 
 .top_img:hover{
     transform: scale(1.1);
-    /* border: 1px solid wheat; */
-    /* box-shadow: 0px 0px 0px ; */
 }
 .top_img:active{
     transform: scale(0.9);
@@ -218,7 +231,8 @@ footer{
 .rotation{
     animation: rotation 30s infinite linear;
 } 
-/* use rotation and using js add rotation class when audio is playing */
+
+
 @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -300,9 +314,6 @@ footer{
 #one:active,#two:active,#three:active,#four:active{
     transform: scale(0.9);
 }
-/* #one{
-    margin-left: -7px;
-} */
 
 #one{
     position: absolute;
@@ -321,28 +332,17 @@ footer{
     position: absolute;
     right:17px;
 }
-/* #two{
-    margin-left: 15px;
-} */
+
 #two img{
     position: absolute;
     right:13px;
-    /* display: none; */
 }
 .two img{
         position: absolute;
         right:13px;
         
 }
-/* audio::-webkit-media-controls {
-    display: none;
-} */
 
-
-/* #three{
-    margin-right: 38px;
-
-} */
 #three img{
     position: absolute;
     right:14px;
